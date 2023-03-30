@@ -18,7 +18,7 @@ jobs:
             working-directory: ./services/apis
           - name: GraphQL
             working-directory: ./services/graphql
-    name: CI
+    name: CI - ${{ matrix.project.name }}
     runs-on: ubuntu-latest
     steps:
       - name: Checkout

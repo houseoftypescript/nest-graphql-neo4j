@@ -11,6 +11,13 @@ on:
 
 jobs:
   ci:
+    strategy:
+      matrix:
+        project:
+          - name: APIs
+            working-directory: ./services/apis
+          - name: GraphQL
+            working-directory: ./services/graphql
     name: CI
     runs-on: ubuntu-latest
     steps:
@@ -22,9 +29,13 @@ jobs:
           node-version: 18.x
       - name: Install Dependencies
         run: yarn install --network-timeout 86400000
+        working-directory: ${{ matrix.project.working-directory }}
       - name: Test - Unit
         run: yarn test
+        working-directory: ${{ matrix.project.working-directory }}
       - name: Test - End-To-End
         run: yarn test:e2e
+        working-directory: ${{ matrix.project.working-directory }}
       - name: Build Production
         run: yarn build
+        working-directory: ${{ matrix.project.working-directory }}

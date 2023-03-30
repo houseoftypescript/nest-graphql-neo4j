@@ -25,7 +25,7 @@ const swaggerify = (app: INestApplication) => {
 const bootstrap = async () => {
   const app: INestApplication = await NestFactory.create(AppModule);
   if (environments.environment === 'development') swaggerify(app);
-  await app.listen(3000);
+  await app.listen(environments.port);
 };
 
 bootstrap();

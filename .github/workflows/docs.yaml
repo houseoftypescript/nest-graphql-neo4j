@@ -7,6 +7,13 @@ on:
 
 jobs:
   cd:
+    strategy:
+      matrix:
+        project:
+          - name: APIs
+            working-directory: ./services/apis
+          - name: GraphQL
+            working-directory: ./services/graphql
     name: CD
     runs-on: ubuntu-latest
     steps:
@@ -16,18 +23,10 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: 18.x
-      - name: Install Dependencies
-        run: yarn install --network-timeout 86400000
-      - name: Test - Unit
-        run: yarn test
-      - name: Test - End-To-End
-        run: yarn test:e2e
-      - name: Build Production
-        run: yarn build
       - name: Deploy GitHub Pages
         uses: JamesIves/github-pages-deploy-action@v4.4.1
         with:
           token: ${{ secrets.GHP_TOKEN }}
           branch: gh-pages
-          folder: public
+          folder: services/apis/public
           clean: true

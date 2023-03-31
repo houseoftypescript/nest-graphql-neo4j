@@ -33,7 +33,7 @@
     "@nestjs/common": "9.3.12",
     "@nestjs/core": "9.3.12",
     "@nestjs/platform-express": "9.3.12",
-    "@nestjs/swagger": "6.2.1",
+    "@nestjs/swagger": "6.3.0",
     "@prisma/client": "4.12.0",
     "js-yaml": "4.1.0",
     "reflect-metadata": "0.1.13",

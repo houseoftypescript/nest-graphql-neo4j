@@ -5,7 +5,7 @@
   "main": "dist/main",
   "repository": "git@github.com:hieudoanm/nest-template.git",
   "author": "hieudoanm <hieumdoan@gmail.com>",
-  "license": "MIT",
+  "license": "GNU GPL 3.0",
   "private": true,
   "engines": {
     "node": ">= 16",

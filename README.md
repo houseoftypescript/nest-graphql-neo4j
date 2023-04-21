@@ -1,1 +1,1 @@
-# Nest.js Template
+# Nest.js GraphQL Template

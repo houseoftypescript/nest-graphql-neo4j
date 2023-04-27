@@ -8,7 +8,7 @@ import { HealthModule } from './modules/health/health.module';
     HealthModule,
     GraphQLModule.forRoot<ApolloDriverConfig>({
       driver: ApolloDriver,
-      autoSchemaFile: 'docs/schema.graphql',
+      autoSchemaFile: 'docs/graphql/schema.graphql',
     }),
   ],
   controllers: [],

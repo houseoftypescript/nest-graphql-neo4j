@@ -1,3 +1,7 @@
-const PORT = process.env.PORT || '5000';
+const NODE_ENV: string = process.env.NODE_ENV || 'development';
+const PORT: string = process.env.PORT || '3000';
 
-export default { port: PORT };
+export default {
+  environment: NODE_ENV,
+  port: PORT,
+};

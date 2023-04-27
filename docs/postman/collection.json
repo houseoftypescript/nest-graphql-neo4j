@@ -1,0 +1,60 @@
+{
+  "item": [
+    {
+      "name": "health",
+      "description": "",
+      "item": [
+        {
+          "id": "a4f77488-1d40-4d10-9fae-d7f05f3adb35",
+          "name": "Health Controller get Health",
+          "request": {
+            "name": "Health Controller get Health",
+            "description": {},
+            "url": {
+              "path": ["health"],
+              "host": ["{{baseUrl}}"],
+              "query": [],
+              "variable": []
+            },
+            "method": "GET",
+            "body": {},
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "34507641-4477-4c5f-8c40-1b5fb80ea457",
+              "originalRequest": {
+                "url": {
+                  "path": ["health"],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [],
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": { "disableBodyPruning": true }
+        }
+      ]
+    }
+  ],
+  "event": [],
+  "variable": [{ "key": "baseUrl", "value": "/" }],
+  "info": {
+    "_postman_id": "ce3d1675-c13c-4f7d-a465-d21d896cd5ca",
+    "name": "Nest.js - GraphQL - Template",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "description": {
+      "content": "Nest.js - GraphQL - Template",
+      "type": "text/plain"
+    }
+  }
+}

@@ -1,18 +1,18 @@
-version: "3.9"
+version: '3.9'
 
 volumes:
   postgres_nest:
     driver: local
 
 services:
-  postgres-nest:
+  postgres-nest-graphql:
     restart: unless-stopped
     image: postgres:15.2
-    container_name: postgres-nest
+    container_name: postgres-nest-graphql
     volumes:
       - postgres_nest:/var/lib/postgresql/data
     ports:
-      - "5432:5432"
+      - '5432:5432'
     environment:
       POSTGRES_DB: postgres
       POSTGRES_USER: username

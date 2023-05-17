@@ -6854,10 +6854,10 @@ sourcemap-codec@^1.4.8:
   resolved "https://registry.yarnpkg.com/sourcemap-codec/-/sourcemap-codec-1.4.8.tgz#ea804bd94857402e6992d05a38ef1ae35a9ab4c4"
   integrity sha512-9NykojV5Uih4lgo5So5dtw+f0JgJX30KCNI8gwhz2J9A15wD0Ml6tjHKwf6fTSa6fAdVBdZeNOs9eJ71qCk8vA==
 
-spectaql@2.0.8:
-  version "2.0.8"
-  resolved "https://registry.yarnpkg.com/spectaql/-/spectaql-2.0.8.tgz#f1f54611855ccefcd7837801416a2cc7ede3b835"
-  integrity sha512-tXteUCq8L0HOlj7zeauQCGKA71AqV1BMahjsWA4ltt4ro93v57z4mWBHM2b/z5+jJGNKjcyxDg5M/E+atpNweA==
+spectaql@2.0.9:
+  version "2.0.9"
+  resolved "https://registry.yarnpkg.com/spectaql/-/spectaql-2.0.9.tgz#eac3db09762050246339092384449511bff7da31"
+  integrity sha512-bI/Q3p+F0aothsGaKopJL0/Xy3bclbkvjqzNuVVSiF/iRW/3kq36lUmVDUMNxrNap6Q/PhQYxpnp7I3o2ZPNSQ==
   dependencies:
     "@anvilco/apollo-server-plugin-introspection-metadata" "^2.0.1"
     "@graphql-tools/load-files" "^6.3.2"
